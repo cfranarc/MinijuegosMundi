@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locomundi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&family=Fredoka+One&family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #a2d2ff, #cdb4db);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #2b2d42;
+      font-family: 'Comfortaa', cursive;
+      margin: 10px 0;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 1.4rem;
+      color: #2b2d42;
+      font-family: 'Fredoka One', cursive;
+      margin: 10px 0;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #2b2d42;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      color: #6c757d;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      display: block;
+      width: 200px;
+      margin: 10px auto;
+      padding: 12px 20px;
+      font-size: 1.2rem;
+      color: white;
+      background-color: #8ecae6;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #219ebc;
+      transform: scale(1.05);
+    }
+  </style>
+  <script>
+    function abrirRompecabezas() {
+      const links = [
+        "https://puzzel.org/es/jigsaw/play?p=-OOJLgq0UWQKftt6d8b3",
+        "https://puzzel.org/es/jigsaw/play?p=-OOJML-fNZ0g9r1R7DgF",
+        "https://puzzel.org/es/jigsaw/play?p=-OOJMmOKFkglGeofC-XU"
+      ];
+      const randomLink = links[Math.floor(Math.random() * links.length)];
+      window.open(randomLink, '_blank');
+    }
+
+    function abrirSopaLetras() {
+      const links = [
+        "https://puzzel.org/es/wordseeker/play?p=-OOJS0FGEoF-Eznyk6Y4",
+        "https://puzzel.org/es/wordseeker/play?p=-OOJVLrpdWCNBa3bt2x6"
+      ];
+      const randomLink = links[Math.floor(Math.random() * links.length)];
+      window.open(randomLink, '_blank');
+    }
+  </script>
+</head>
+<body>
+  <div class="header">¡Bienvenido a los minijuegos de Mundi!</div>
+  <div class="container">
+    <h1>LOCOMUNDI</h1>
+    <div class="subtitle">Minijuegos de LA06</div>
+    <button class="button" onclick="abrirRompecabezas()">Rompecabezas</button>
+    <button class="button" onclick="abrirSopaLetras()">Sopa de Letras</button>
+    <a class="button" href="https://puzzel.org/es/matching-pairs/play?p=-OOJU2Fvb5RdJGfiPI4Z" target="_blank">Conecta!</a>
+    <a class="button" href="https://character.ai/chat/tlWmxJM4nJzEtyMRDKuKTDBIxDYQWEkjGulflFSPt_g" target="_blank">Chatea con Mundi</a>
+  </div>
+  <div class="footer">Recuerda llamar a tu hora</div>
+</body>
+</html>
